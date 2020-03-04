@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css?family=Caladea&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Caladea", sans-serif;
+  background-color: rgb(246, 255, 255);
+}
+
+header {
+  position: sticky;
+  display: flex;
+  justify-content: flex-end;
+  height: 50%;
+  align-items: center;
+  padding: 5px 10%;
+}
+
+/* Styling the Logo */
+
+#logo {
+  margin-right: auto;
+  cursor: default;
+  transition: all 0.3s ease 0s;
+  padding: 10px 10px;
+}
+
+.nav-item {
+  display: inline-block;
+  padding: 10px 10px;
+  list-style-type: none;
+}
+
+.nav-item a {
+  color: black;
+  text-decoration: none;
+  transition: all 0.3s ease 0s;
+}
+
+.nav-item a:hover {
+  color: #00b0ff;
+}
+
+#login-button-anchor {
+  text-decoration: none;
+}
+
+button {
+  margin-left: 10px;
+  cursor: pointer;
+  display: inline;
+  background-color: rgba(0, 176, 255, 1);
+  border: none;
+  color: white;
+  border-radius: 25px;
+  padding: 10px 20px;
+  transition: all 0.3s ease 0s;
+}
+
+button:hover {
+  background-color: rgba(0, 176, 255, 0.8);
+}
+
+/* Styling the Workspace div */
+
+.workspace {
+  display: grid;
+  grid-template-areas:
+    "the-first-section"
+    "the-second-section"
+    "the-third-section";
+  grid-row-gap: 80px;
+  margin: 50px 100px;
+}
+
+main a,
+footer a {
+  text-decoration: none;
+  color: #00b0ff;
+  transition: all 0.3s ease 0s;
+}
+
+main a:hover,
+footer a:hover {
+  text-decoration: underline;
+}
+
+#first-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "the-first-text the-business-image";
+  grid-area: the-first-section;
+}
+
+#the-first-header-text {
+  grid-area: the-first-text;
+  padding: 15px 15px;
+}
+
+.the-header {
+  font-size: 30px;
+}
+
+#the-second-header-text {
+  grid-area: the-second-text;
+}
+
+#businnes-image {
+  margin-left: 100px;
+  padding: 15px 15px;
+  grid-area: the-business-image;
+  width: 60%;
+}
+
+#second-section {
+  display: grid;
+  grid-area: the-second-section;
+  grid-template-areas: "the-second-text the-publish-image";
+}
+
+#publish-image {
+  margin-left: 170px;
+  padding: 15px 15px;
+  grid-area: the-publish-image;
+  width: 51%;
+}
+
+#like-dislike-image {
+  margin-left: 300px;
+  padding: 15px 15px;
+  grid-area: the-like-dislike-image;
+  width: 35%;
+}
+
+#third-section {
+  display: grid;
+  grid-area: the-third-section;
+  grid-template-areas: "the-third-text the-like-dislike-image";
+}
+
+.brand-logo {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  width: 25%;
+}
+
+#my-footer {
+  font-weight: 500;
+  text-align: center;
+  padding: 10px 10px;
+}
+
+#username,
+#password {
+  background-color: #fff;
+  padding: 6px 6px;
+  border: none;
+  border-bottom: 1px solid #00b0ff;
+  border-radius: 10px;
+}
+
+#login-section {
+  display: grid;
+  grid-template-areas: "the-login-text the-sync-files-image";
+}
+
+#the-login-section-text {
+  grid-area: the-login-text;
+}
+
+#sync-files-image {
+  margin-left: 700px;
+  padding: 15px 15px;
+  grid-area: the-sync-files-image;
+  width: 25%;
+}
+
+#docs-section {
+  display: grid;
+  grid-template-areas: "the-docs-text the-docs-proud-coder-image";
+}
+
+#the-docs-section-text {
+  grid-area: the-docs-text;
+}
+
+#docs-proud-coder-image {
+  margin-bottom: 100px;
+  margin-left: 560px;
+  grid-area: the-docs-proud-coder-image;
+  width: 35%;
+}
+
+#about-section {
+  display: grid;
+  grid-template-areas: "the-about-text the-about-proud-coder-image";
+}
+
+#the-about-section-text {
+  grid-area: the-about-text;
+}
+
+#about-proud-coder-image {
+  margin-bottom: 100px;
+  margin-left: 525px;
+  grid-area: the-about-proud-coder-image;
+  width: 36%;
+}
