@@ -130,7 +130,7 @@ footer a:hover {
 }
 
 #like-dislike-image {
-  margin-left: 300px;
+  margin-left: 310px;
   padding: 15px 15px;
   grid-area: the-like-dislike-image;
   width: 35%;
@@ -146,7 +146,7 @@ footer a:hover {
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
-  width: 25%;
+  width: 10%;
 }
 
 #my-footer {
