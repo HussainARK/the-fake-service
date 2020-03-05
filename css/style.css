@@ -156,7 +156,9 @@ footer a:hover {
 }
 
 #username,
-#password {
+#password,
+#email,
+#message {
   background-color: #fff;
   padding: 6px 6px;
   border: none;

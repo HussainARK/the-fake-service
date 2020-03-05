@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Fake Service - About</title>
+    <title>The Fake Service - Contact Us</title>
     <link rel="stylesheet" href="./css/style.css" />
     <link
       rel="shortcut icon"
@@ -32,44 +32,54 @@
     </header>
     <main>
       <div class="workspace">
-        <div id="about-section">
-          <div id="the-about-section-text">
+        <div id="login-section">
+          <div id="the-login-section-text">
             <p class="the-header">
-              About this Service:
+              Contact Us:
             </p>
             <br />
-            <p>
-              This Service does'nt have an About Page.
+            <form id="form" netlify>
+              <label for="username">Username: </label>
+              <br />
+              <input
+                type="text"
+                autocomplete="off"
+                required
+                name="username"
+                id="username"
+              />
               <br />
               <br />
-              So, Goto <a href="/#first-section">This</a> Link,
+              <label for="email">Email: </label>
               <br />
-              Because Here we're describing why you Should use It,<br />
+              <input
+                type="email"
+                autocomplete="off"
+                required
+                name="email"
+                id="email"
+              />
               <br />
-              Also, I've used these useful tools to create this Website:
+              <br />
+              <label>Message: </label>
+              <br />
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+              ></textarea>
               <br />
               <br />
-            </p>
-            <ul>
-              <li>
-                <a target="_blank" href="https://undraw.co">unDraw</a>
-              </li>
-              <li>
-                <a target="_blank" href="https://www.iconmonstr.com"
-                  >iconmonstr</a
-                >
-              </li>
-              <li>
-                <a target="_blank" href="https://fonts.google.com"
-                  >Google Fonts</a
-                >
-              </li>
-            </ul>
+              <button type="submit" id="submit-button">
+                Submit
+              </button>
+            </form>
           </div>
           <img
-            id="about-proud-coder-image"
-            src="./icons-and-pictures/undraw/proud-coder.svg"
-            alt="Proud Coder"
+            id="sync-files-image"
+            src="./icons-and-pictures/undraw/sync-files.svg"
+            alt="Sync Files"
           />
         </div>
       </div>
