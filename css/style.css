@@ -7,14 +7,19 @@
   font-family: Caladea;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
   font-family: "Caladea", sans-serif;
   background-color: rgb(246, 255, 255);
 }
 
 header {
-  position: sticky;
-  top: 0;
   display: flex;
   justify-content: flex-end;
   height: 50%;
@@ -214,4 +219,8 @@ footer a:hover {
   margin-left: 525px;
   grid-area: the-about-proud-coder-image;
   width: 36%;
+}
+
+footer {
+  margin-top: auto;
 }
